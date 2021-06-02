@@ -1,0 +1,267 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #4d5152;
+}
+* {
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
+
+}
+/*naglowek*/
+header {
+    display: flex;
+    background-color: #5a6e78;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    
+}
+nav > ul {
+    display: flex;
+    list-style: none;
+    
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li {
+    padding-right: 50px;
+
+}
+
+.main-logo {
+    padding-left: 50px;
+}
+
+h1 img {
+    width: 100x;
+    height: 45px;
+}
+
+/*logo*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+margin-left: 10%;
+margin-right: 10%;
+height: 15rem;
+width: 15rem;
+align-items: center;
+}
+
+/*main image*/
+
+.main-img {
+height: 60rem;
+background-image: url(assets/mr_coffee_salle.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+margin: 6%;
+margin-top: 5px;
+display: flex;
+justify-content: center;
+color:#fff;
+}
+
+.main-text {
+text-align: center;
+font-size: 43px;
+margin-top: 2%;
+text-shadow: 0.1em 0.1em 0.2em #767a7a;
+}
+ 
+h3 {
+    color: #4d5152;
+    text-align: center;
+    font-size: 3em;
+}
+/*boxy*/
+
+.boxy {
+height: 500px;
+display: flex;
+column-gap: 50px;
+margin: 0 100px;
+}
+
+.box {
+    background-color: #bbb;
+    color: #fff;
+    width: calc(100%/3);
+    text-align: center;
+    padding: 50px;
+}
+
+.box img {
+    max-width: 30%;
+}
+
+.box h4 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box p {
+    font-size: 1.25rem;
+}
+
+
+/*button*/
+
+.conteiner {
+justify-content: center;
+display: flex;
+align-items: center;
+margin:5%;
+}
+
+.button {
+background-color: #6f7885;
+color: #fff;
+border: none;
+border-radius: 15px;
+width: 25%;
+height: 80px;
+cursor: pointer;
+font-size: 25px;
+font-weight: 900;
+}
+
+
+/*open-hours*/
+.open-hours {
+    margin: 0 100px;
+    font-size: 1.5rem;
+}
+
+.open-hours img {
+    max-width: 80px;
+    vertical-align: middle;
+    margin-top: -35px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.lead {
+    font-size: 1.7rem;
+}
+
+.hours-columns {
+    display: flex;
+    column-gap:40px;
+    margin-bottom: 100px;
+}
+
+.hours-column {
+    width: 50%;
+}
+
+.open-hours .lead {
+    margin-top: 50px;
+}
+
+/*footer*/
+
+.stopka {
+background-color: #5a6e78;
+color: #fff;
+margin: 0;
+padding: 20px 0;
+position: relative;
+}
+
+.stopka h5 {
+    text-align: center;
+}
+
+.stopka i{
+color: #fff;
+font-size: 2rem;
+
+}
+.stopka img {
+    max-width: 60px;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+
+.social-media {
+list-style: none;
+display: flex;
+color: #fff;
+justify-content: center;
+column-gap: 10px;
+}
+
+.social-media a {
+color:#fff;
+}
+
+/*about text photo*/
+
+.text-photo {
+height: 800px;
+display: flex;
+margin: 120px;
+column-gap: 40px;
+}
+
+.text1,
+.text2 {
+padding: 30px;
+font-size: 30px;
+color:#585f69;
+width: 50%;
+text-align: left;
+justify-content: center
+}
+
+.text1 p,
+.text2 p {
+padding-bottom: 10px;
+}
+
+.photo1,
+.photo2 {
+    width: 50%;
+}
+
+.photo1 {
+text-align: right;
+}
+
+.photo2 {
+text-align: left;
+}
+
+.photo1 img,
+.photo2 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*contact-details*/
+.contact-details {
+    width: 602px;
+    margin: 0 auto 50px;
+}
+
+.contact-details img {
+    margin-top: 70px;
+}
+
