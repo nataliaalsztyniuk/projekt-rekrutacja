@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="destription" content="Mr. Coffee">
+    <meta name="destription" content="Mr. Coffeeeq">
     <meta name="keywords" content="mr.coffee, cafe">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="fontawesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,200&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="application.css">
+    <script type="text/javascript" src="app.js"></script>
     <title>Contact us</title>
 </head>
+
 <body>
     <header>
         <h1 class="main-logo">
@@ -27,18 +31,47 @@
 
     </header>
     <div class="logo">
-     <img src="assets/logo_mrcoffee.png" alt="logo_mrcoffee">
+        <img src="assets/logo_mrcoffee.png" alt="logo_mrcoffee">
     </div>
 
-    <section>
-        <h3>On vous attend !</h3>
+    <section class="contact">
+        <section>
+            <h3>Dites nous tout !</h3>
+
+
+            <form class="contact-form">
+                <label for="nameInput"> Prenom *</label> <br>
+                <input type="text" id="nameInput" required> <br>
+                <label for="surnameInput">Nom *</label> <br>
+                <input type="text" required> <br>
+                <label for="telephoneInput">Téléphone</label> <br>
+                <input type="text"> <br>
+                <label for="emailInput">Adresse mail *</label> <br>
+                <input type="email" required> <br>
+                <label for="messageInput">Message *</label> <br>
+                <input type="text" placeholder="Tapez votre message ici" required> <br>
+            </form>
+            <button type="submit" id="btn">envoyer</button>
+            <h3>On vous attend !</h3>
+            <p class="form-info"></p>
+        </section>
     </section>
-    
+
+    <!-- <div id="successPopup" class="pop_up contact">
+        <br />
+        <img src="assets/logo_dark.png" />
+        <h2>Merci</h2><br />
+        <h3>Votre message a bien été envoyé !</h3><br /><br /><br />
+        <h4>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</h4>
+        <button onclick="hide(event)">Fermer</button>
+    </div> -->
+
+
     <section class="contact-details">
-        <p class="lead"><strong>Mr.Coffee</strong><br/>
-            15 place Jules Guesde<br/>
+        <p class="lead"><strong>Mr.Coffee</strong><br />
+            15 place Jules Guesde<br />
             75006 Paris</p>
-        <p class="lead">Tel : +33 9 46 25 78 45<br/>
+        <p class="lead">Tel : +33 9 46 25 78 45<br />
             Mail : contact@mr-coffee.com</p>
         <img src="assets/carte_contact.png" alt="">
     </section>
@@ -48,11 +81,12 @@
             <img src="assets/logo_blanc.png" alt="logo">
             <h5> Suivez nous sur les réseaux sociaux !</h5>
             <ul class="social-media">
-                     <li><a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
-                     <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
             </ul>
         </section>
     </footer>
 </body>
+
 </html>
