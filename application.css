@@ -265,3 +265,43 @@ text-align: left;
     margin-top: 70px;
 }
 
+/* *contact */
+.contact button {
+background-color: #6f7885;
+color: #fff;
+border: none;
+border-radius: 15px;
+width: 25%;
+height: 80px;
+cursor: pointer;
+font-size: 25px;
+font-weight: 900;
+text-transform: uppercase;
+
+}
+.contact input {
+    background-color: #bbb;
+    font-size: 30px;
+    padding: 5px;
+    
+}
+
+.pop_up {
+  width: 50%;
+  height: 60%;
+  background-color: white;
+  border: 2px solid gray;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  color: dimgrey;
+}
+
+ .contact {
+    text-align: center;
+ }
+
