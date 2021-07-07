@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,200&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="application.css">
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="form.js"></script>
     <title>Contact us</title>
 </head>
 
@@ -39,32 +39,47 @@
             <h3>Dites nous tout !</h3>
 
 
-            <form class="contact-form">
-                <label for="nameInput"> Prenom *</label> <br>
-                <input type="text" id="nameInput" required> <br>
+            <form class="contact-form" id="form" onsubmit="handleSubmit(event)">
+
+                <label for="FirstNameInput"> Prenom *</label> <br>
+                <input type="text" name="firstName" id="firstNameInput" required/> <br>
+
                 <label for="surnameInput">Nom *</label> <br>
-                <input type="text" required> <br>
+                <input type="text" id="surnameInput" name="surname" required> <br>
+
                 <label for="telephoneInput">Téléphone</label> <br>
-                <input type="text"> <br>
+                <input type="text" name="phone" id="telephoneInput"/> <br>
+
                 <label for="emailInput">Adresse mail *</label> <br>
-                <input type="email" required> <br>
+                <input type="email"  name="email" id="emailInput" required> <br>
+
                 <label for="messageInput">Message *</label> <br>
-                <input type="text" placeholder="Tapez votre message ici" required> <br>
+                
+                <textarea rows="3" cols="50" value="message" name="message" id="messageInput" required>Tapez votre message ici</textarea><br />
+           
+                <button type="submit" id="btn">envoyer</button>
             </form>
-            <button type="submit" id="btn">envoyer</button>
+             <div id="successPopup" class="pop_up contact-form">
+            <br />
+            <img src="logo_dark.png" />
+            <h2>Merci</h2><br />
+            <h3>Votre message a bien été envoyé !</h3><br /><br /><br />
+            <h4>Nous essaierons d’y répondre au mieux dans les plus brefs <br> délais. À bientot chez Mr.Coffee</h4>
+            <button onclick="hide(event)">Fermer</button>
+            </div>
             <h3>On vous attend !</h3>
-            <p class="form-info"></p>
+        
         </section>
     </section>
 
-    <!-- <div id="successPopup" class="pop_up contact">
+    <div id="successPopup" class="pop_up contact">
         <br />
-        <img src="assets/logo_dark.png" />
+        <img src="logo_dark.png" />
         <h2>Merci</h2><br />
         <h3>Votre message a bien été envoyé !</h3><br /><br /><br />
         <h4>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</h4>
         <button onclick="hide(event)">Fermer</button>
-    </div> -->
+    </div>
 
 
     <section class="contact-details">

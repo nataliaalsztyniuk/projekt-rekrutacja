@@ -271,24 +271,27 @@ background-color: #6f7885;
 color: #fff;
 border: none;
 border-radius: 15px;
-width: 25%;
+width: 30%;
 height: 80px;
 cursor: pointer;
 font-size: 25px;
 font-weight: 900;
 text-transform: uppercase;
+margin: 70px;
 
 }
 .contact input {
     background-color: #bbb;
     font-size: 30px;
-    padding: 5px;
+    padding: 15px;
+    border: none;
+    
     
 }
 
 .pop_up {
   width: 50%;
-  height: 60%;
+  height: auto;
   background-color: white;
   border: 2px solid gray;
   display: none;
@@ -296,12 +299,54 @@ text-transform: uppercase;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
-  text-align: center;
-  color: dimgrey;
+  
 }
 
- .contact {
-    text-align: center;
- }
+.pop_up > h2 {
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  margin-right: 10%;
+  text-transform: uppercase;
+}
 
+.pop_up > h3 {
+
+  font-size: 2rem;
+  
+}
+
+.pop_up > h4 {
+  margin-left: 20%;
+  text-align: left;
+  font-size: 20px;
+  
+  
+}
+
+.pop_up > img {
+  width: 10%;
+  height: auto;
+  float: left;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 9rem;
+
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 40%;
+  background-color: #bbb;
+  color: white;
+  display: inline-block;
+  margin: 20px;
+  font-size: 18px;
+  padding: 10px;
+}
